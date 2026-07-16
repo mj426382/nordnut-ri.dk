@@ -44,7 +44,7 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? 'bg-white/95 backdrop-blur-md shadow-sm border-b border-neutral-100'
-          : 'bg-transparent'
+          : 'bg-white/80 backdrop-blur-sm'
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,11 +54,11 @@ export default function Navigation() {
             href={`/${locale}`}
             className="flex items-center gap-2 group"
           >
-            <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center group-hover:bg-emerald-700 transition-colors">
+            <div className="w-8 h-8 bg-sky-600 rounded-lg flex items-center justify-center group-hover:bg-sky-700 transition-colors">
               <span className="text-white font-bold text-sm">N</span>
             </div>
-            <span className={`font-bold text-lg tracking-tight ${isScrolled ? 'text-neutral-900' : 'text-white'}`}>
-              NordNutri<span className="text-emerald-500">.dk</span>
+            <span className="font-bold text-lg tracking-tight text-neutral-900">
+              NordNutri<span className="text-sky-500">.dk</span>
             </span>
           </Link>
 
@@ -68,9 +68,7 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-emerald-500 ${
-                  isScrolled ? 'text-neutral-700' : 'text-white/90'
-                }`}
+                className="text-sm font-medium text-neutral-700 transition-colors hover:text-sky-600"
               >
                 {link.label}
               </a>
@@ -83,11 +81,7 @@ export default function Navigation() {
             <div className="relative">
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className={`flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-md transition-colors ${
-                  isScrolled
-                    ? 'text-neutral-600 hover:bg-neutral-100'
-                    : 'text-white/90 hover:bg-white/10'
-                }`}
+                className="flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 rounded-md transition-colors text-neutral-600 hover:bg-neutral-100"
                 aria-label="Switch language"
               >
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -106,7 +100,7 @@ export default function Navigation() {
                       href={getLocaleHref(loc)}
                       onClick={() => setIsLangOpen(false)}
                       className={`block px-4 py-2 text-sm hover:bg-neutral-50 transition-colors ${
-                        loc === locale ? 'text-emerald-600 font-semibold' : 'text-neutral-700'
+                        loc === locale ? 'text-sky-600 font-semibold' : 'text-neutral-700'
                       }`}
                     >
                       {name}
@@ -118,7 +112,7 @@ export default function Navigation() {
 
             <a
               href={`/${locale}#contact`}
-              className="bg-emerald-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-emerald-700 transition-colors"
+              className="bg-sky-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-sky-700 transition-colors"
             >
               {t('startCooperation')}
             </a>
@@ -127,7 +121,7 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`lg:hidden p-2 rounded-md ${isScrolled ? 'text-neutral-700' : 'text-white'}`}
+            className="lg:hidden p-2 rounded-md text-neutral-700"
             aria-label="Toggle menu"
           >
             <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -149,7 +143,7 @@ export default function Navigation() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="px-4 py-2.5 text-neutral-700 font-medium hover:text-emerald-600 hover:bg-neutral-50 rounded-lg transition-colors"
+                  className="px-4 py-2.5 text-neutral-700 font-medium hover:text-sky-600 hover:bg-sky-50 rounded-lg transition-colors"
                 >
                   {link.label}
                 </a>
@@ -164,7 +158,7 @@ export default function Navigation() {
                       onClick={() => setIsMenuOpen(false)}
                       className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
                         loc === locale
-                          ? 'bg-emerald-600 text-white'
+                          ? 'bg-sky-600 text-white'
                           : 'bg-neutral-100 text-neutral-700 hover:bg-neutral-200'
                       }`}
                     >
@@ -177,7 +171,7 @@ export default function Navigation() {
                 <a
                   href={`/${locale}#contact`}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block w-full text-center bg-emerald-600 text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-emerald-700 transition-colors"
+                  className="block w-full text-center bg-sky-600 text-white px-5 py-3 rounded-lg text-sm font-semibold hover:bg-sky-700 transition-colors"
                 >
                   {t('startCooperation')}
                 </a>

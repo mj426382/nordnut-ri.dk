@@ -45,8 +45,8 @@ export default function ServicesSection() {
         {/* Header */}
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-emerald-600" />
-            <span className="text-emerald-600 text-sm font-semibold uppercase tracking-widest">
+            <div className="w-8 h-px bg-sky-500" />
+            <span className="text-sky-600 text-sm font-semibold uppercase tracking-widest">
               {t('label')}
             </span>
           </div>
@@ -61,9 +61,9 @@ export default function ServicesSection() {
           {services.map((service, idx) => (
             <div
               key={service.title}
-              className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 border border-neutral-100"
+              className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-md transition-all hover:-translate-y-1 border border-neutral-100 hover:border-sky-100"
             >
-              <div className="w-12 h-12 bg-emerald-50 group-hover:bg-emerald-600 rounded-xl flex items-center justify-center mb-6 transition-colors text-emerald-600 group-hover:text-white">
+              <div className="w-12 h-12 bg-sky-50 group-hover:bg-sky-600 rounded-xl flex items-center justify-center mb-6 transition-colors text-sky-600 group-hover:text-white">
                 {serviceIcons[idx]}
               </div>
               <h3 className="text-lg font-bold text-neutral-900 mb-3">{service.title}</h3>

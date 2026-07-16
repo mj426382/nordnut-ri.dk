@@ -20,7 +20,7 @@ function FaqItem({ question, answer }: FaqItemProps) {
       >
         <span className="font-semibold text-neutral-900">{question}</span>
         <svg
-          className={`w-5 h-5 text-emerald-600 flex-shrink-0 transition-transform mt-0.5 ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 text-sky-600 flex-shrink-0 transition-transform mt-0.5 ${isOpen ? 'rotate-180' : ''}`}
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -74,11 +74,11 @@ export default function FaqSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-emerald-600" />
-            <span className="text-emerald-600 text-sm font-semibold uppercase tracking-widest">
+            <div className="w-8 h-px bg-sky-500" />
+            <span className="text-sky-600 text-sm font-semibold uppercase tracking-widest">
               {t('label')}
             </span>
-            <div className="w-8 h-px bg-emerald-600" />
+            <div className="w-8 h-px bg-sky-500" />
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
             {t('headline')}

@@ -13,11 +13,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-sky-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">N</span>
               </div>
               <span className="font-bold text-white text-lg">
-                NordNutri<span className="text-emerald-400">.dk</span>
+                NordNutri<span className="text-sky-400">.dk</span>
               </span>
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed max-w-xs">
@@ -42,7 +42,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-neutral-400 hover:text-emerald-400 text-sm transition-colors"
+                    className="text-neutral-400 hover:text-sky-400 text-sm transition-colors"
                   >
                     {link.label}
                   </a>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <Link
                   key={loc}
                   href={`/${loc}`}
-                  className="px-2.5 py-1 rounded text-xs font-medium bg-neutral-800 text-neutral-400 hover:bg-emerald-600 hover:text-white transition-colors uppercase"
+                  className="px-2.5 py-1 rounded text-xs font-medium bg-neutral-800 text-neutral-400 hover:bg-sky-600 hover:text-white transition-colors uppercase"
                 >
                   {loc}
                 </Link>

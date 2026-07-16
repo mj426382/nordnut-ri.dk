@@ -17,8 +17,8 @@ export default function ProcessSection() {
         {/* Header */}
         <div className="max-w-3xl mb-16">
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-px bg-emerald-600" />
-            <span className="text-emerald-600 text-sm font-semibold uppercase tracking-widest">
+            <div className="w-8 h-px bg-sky-500" />
+            <span className="text-sky-600 text-sm font-semibold uppercase tracking-widest">
               {t('label')}
             </span>
           </div>
@@ -31,28 +31,28 @@ export default function ProcessSection() {
         {/* Steps */}
         <div className="relative">
           {/* Connector line */}
-          <div className="hidden lg:block absolute left-[39px] top-12 bottom-12 w-px bg-emerald-200" />
+          <div className="hidden lg:block absolute left-[39px] top-12 bottom-12 w-px bg-sky-200" />
 
           <div className="space-y-8">
             {steps.map((step, idx) => (
               <div key={step.num} className="flex gap-8 items-start group">
                 {/* Step number circle */}
-                <div className="flex-shrink-0 w-20 h-20 rounded-full bg-white border-2 border-emerald-200 group-hover:border-emerald-500 group-hover:bg-emerald-600 flex flex-col items-center justify-center transition-all shadow-sm z-10">
-                  <span className="text-xs font-bold text-emerald-600 group-hover:text-emerald-200 transition-colors leading-none">
+                <div className="flex-shrink-0 w-20 h-20 rounded-full bg-white border-2 border-sky-200 group-hover:border-sky-500 group-hover:bg-sky-600 flex flex-col items-center justify-center transition-all shadow-sm z-10">
+                  <span className="text-xs font-bold text-sky-600 group-hover:text-sky-100 transition-colors leading-none">
                     {step.num}
                   </span>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-neutral-100 group-hover:shadow-md transition-shadow">
+                <div className="flex-1 bg-white rounded-2xl p-6 shadow-sm border border-neutral-100 group-hover:shadow-md group-hover:border-sky-100 transition-all">
                   <div className="flex items-start justify-between gap-4">
                     <div>
                       <h3 className="text-lg font-bold text-neutral-900 mb-2">{step.title}</h3>
                       <p className="text-neutral-600 leading-relaxed">{step.desc}</p>
                     </div>
                     {idx === steps.length - 1 && (
-                      <div className="flex-shrink-0 w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                        <svg className="w-4 h-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <div className="flex-shrink-0 w-8 h-8 bg-sky-100 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-sky-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                         </svg>
                       </div>

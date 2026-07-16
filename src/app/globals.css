@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --pistachio: #86BA80;
+  --pistachio-light: #eef7eb;
+  --pistachio-dark: #5a8c54;
 }
 
 @theme inline {
