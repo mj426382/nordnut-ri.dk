@@ -20,11 +20,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'meta' });
 
-  const alternates: Record<string, string> = {};
-  for (const loc of locales) {
-    alternates[loc] = `https://nordnutri.dk/${loc}`;
-  }
-
   return {
     metadataBase: new URL('https://nordnutri.dk'),
     title: {
