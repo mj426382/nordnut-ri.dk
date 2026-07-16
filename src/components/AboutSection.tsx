@@ -61,7 +61,7 @@ export default function AboutSection() {
           </span>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-neutral-900 mb-8 leading-tight">

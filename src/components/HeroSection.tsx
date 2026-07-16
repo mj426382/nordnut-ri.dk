@@ -137,7 +137,7 @@ export default function HeroSection({ locale }: Props) {
                 </svg>
               </a>
               <a
-                href={`/${locale}#services`}
+                href={`/${locale}#contact`}
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-sky-50 text-neutral-800 font-semibold px-8 py-4 rounded-xl border border-neutral-200 hover:border-sky-200 transition-all hover:-translate-y-0.5 text-base shadow-sm"
               >
                 {t('cta2')}
