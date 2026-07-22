@@ -159,8 +159,9 @@
     "successTitle": "Thank you for your inquiry!",
     "successMessage": "We have received your message and will get back to you within 24 hours on weekdays.",
     "errorMessage": "An error occurred. Please try again or contact us directly.",
-    "emailAddress": "info@nordnutri.dk",
-    "phone": "+45 XX XX XX XX",
+    "emailAddress": "partnerships@nordnutri.dk",
+    "phone": "+45 28 76 77 22",
+    "phone2": "+48 881 358 838",
     "address": "Denmark",
     "orContact": "Or contact us directly"
   },

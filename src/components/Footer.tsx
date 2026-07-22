@@ -86,8 +86,8 @@ export default function Footer() {
           <div className="flex items-center gap-1 text-neutral-600 text-xs">
             <span>NordNutri.dk</span>
             <span>·</span>
-            <a href="mailto:info@nordnutri.dk" className="hover:text-neutral-400 transition-colors">
-              info@nordnutri.dk
+            <a href="mailto:partnerships@nordnutri.dk" className="hover:text-neutral-400 transition-colors">
+              partnerships@nordnutri.dk
             </a>
           </div>
         </div>
