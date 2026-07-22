@@ -79,7 +79,7 @@ export default async function LocaleLayout({ children, params }: Props) {
               logo: 'https://nordnutri.dk/images/logo.png',
               contactPoint: {
                 '@type': 'ContactPoint',
-                telephone: '+45-XX-XX-XX-XX',
+                telephone: '+45-28-76-77-22',
                 contactType: 'customer service',
                 availableLanguage: ['Danish', 'English', 'Polish'],
               },

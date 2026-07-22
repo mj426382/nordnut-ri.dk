@@ -69,6 +69,10 @@ export default function ContactSection({ locale }: Props) {
                   <a href={`tel:${t('phone')}`} className="text-neutral-900 font-medium hover:text-sky-600 transition-colors">
                     {t('phone')}
                   </a>
+                  <br />
+                  <a href={`tel:${t('phone2')}`} className="text-neutral-900 font-medium hover:text-sky-600 transition-colors">
+                    {t('phone2')}
+                  </a>
                 </div>
               </div>
 
@@ -92,7 +96,7 @@ export default function ContactSection({ locale }: Props) {
           {/* Right: Form */}
           <div className="bg-white rounded-2xl shadow-sm border border-neutral-100 p-8">
             <form
-              action="https://formsubmit.co/info@nordnutri.dk"
+              action="https://formsubmit.co/partnerships@nordnutri.dk"
               method="POST"
               onSubmit={handleSubmit}
             >
